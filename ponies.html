@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ponik – Pónifarm 🦄</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav id="menu">
+    <a href="index.html">Főoldal</a>
+    <a href="ponies.html">Ponik</a>
+    <a href="adoption.html">Örökbefogadás</a>
+    <a href="gallery.html">Galéria</a>
+  </nav>
+
+  <header>
+    <h1>Ismerd meg a ponikat! 🐴</h1>
+    <p>Itt találod a farm összes lakóját.</p>
+  </header>
+
+  <main>
+    <div class="box">
+      <h2>Ponik listája</h2>
+
+      <div class="filter">
+        <label for="pony-search">Keresés névre:</label>
+        <input type="text" id="pony-search" placeholder="Pl. Csillag">
+
+        <label for="color-filter">Szín:</label>
+        <select id="color-filter">
+          <option value="">Mind</option>
+          <option value="Rózsaszín">Rózsaszín</option>
+          <option value="Fehér">Fehér</option>
+          <option value="Lila">Lila</option>
+          <option value="Barna">Barna</option>
+          <option value="Zöld">Zöld</option>
+          <option value="Sárga">Sárga</option>
+        </select>
+
+        <p id="pony-count"></p>
+      </div>
+
+      <table id="pony-table">
+        <thead>
+          <tr>
+            <th>Kép</th>
+            <th>Név</th>
+            <th>Szín</th>
+            <th>Kor</th>
+            <th>Kedvenc étel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="img/pony1.svg" alt="Pillecukor" width="80"></td>
+            <td>Pillecukor</td>
+            <td>Rózsaszín</td>
+            <td>4 év</td>
+            <td>Alma</td>
+          </tr>
+          <tr>
+            <td><img src="img/pony2.svg" alt="Csillag" width="80"></td>
+            <td>Csillag</td>
+            <td>Fehér</td>
+            <td>6 év</td>
+            <td>Répa</td>
+          </tr>
+          <tr>
+            <td><img src="img/pony3.svg" alt="Szivárvány" width="80"></td>
+            <td>Szivárvány</td>
+            <td>Lila</td>
+            <td>3 év</td>
+            <td>Cukorka (csak ritkán!)</td>
+          </tr>
+          <tr>
+            <td><img src="img/pony4.svg" alt="Mogyoró" width="80"></td>
+            <td>Mogyoró</td>
+            <td>Barna</td>
+            <td>8 év</td>
+            <td>Zab</td>
+          </tr>
+          <tr>
+            <td><img src="img/pony5.svg" alt="Habos" width="80"></td>
+            <td>Habos</td>
+            <td>Zöld</td>
+            <td>2 év</td>
+            <td>Sárgarépa</td>
+          </tr>
+          <tr>
+            <td><img src="img/pony6.svg" alt="Napocska" width="80"></td>
+            <td>Napocska</td>
+            <td>Sárga</td>
+            <td>5 év</td>
+            <td>Alma</td>
+          </tr>
+        </tbody>
+      </table>
+      <p id="no-result">Nincs a keresésnek megfelelő poni. 😢</p>
+    </div>
+
+    <div class="box">
+      <h2>Többet szeretnél tudni a ponikról?</h2>
+      <p>
+        Olvass tovább a
+        <a href="https://hu.wikipedia.org/wiki/P%C3%B3ni" target="_blank">Wikipédián</a>,
+        vagy nézd meg a <a href="gallery.html">galériánkat</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pónifarm</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/ponies.js"></script>
+
+</body>
+</html>
