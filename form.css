@@ -1,0 +1,125 @@
+/* ===== Űrlap elemek ===== */
+#adoption-form .field {
+  margin-bottom: 18px;
+}
+
+#adoption-form label {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+#adoption-form input[type="text"],
+#adoption-form textarea,
+#adoption-form input[type="date"] {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 14px;
+  border: 3px solid #ffc2dd;
+  border-radius: 15px;
+  background-color: #fffafc;
+  font-family: inherit;
+  font-size: 1em;
+  color: #5a3d5c;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#adoption-form input[type="text"]:focus,
+#adoption-form textarea:focus,
+#adoption-form input[type="date"]:focus {
+  outline: none;
+  border-color: #b266d9;
+  box-shadow: 0 0 8px rgba(178, 102, 217, 0.4);
+}
+
+#adoption-form input[type="color"] {
+  width: 60px;
+  height: 40px;
+  border: 3px solid #ffc2dd;
+  border-radius: 12px;
+  background: none;
+  cursor: pointer;
+}
+
+#adoption-form input[type="radio"],
+#adoption-form input[type="checkbox"] {
+  accent-color: #ff6fa5;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+/* ===== Gombok ===== */
+button {
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff6fa5;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #b266d9;
+  transform: scale(1.08);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#reset-btn {
+  background-color: #c9a7d9;
+}
+
+/* ===== Hibaüzenetek (a JS fogja használni) ===== */
+.error {
+  display: block;
+  color: #e0245e;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+.invalid {
+  border-color: #e0245e !important;
+  background-color: #fff0f3 !important;
+}
+
+/* Rádiógombok és jelölőnégyzet hibája: az egész sor piros keretet kap */
+.group-invalid {
+  border: 2px solid #e0245e;
+  border-radius: 12px;
+  background-color: #fff0f3;
+  padding: 8px 12px;
+}
+
+.valid {
+  border-color: #4cc38a !important;
+}
+
+/* ===== Eredmény doboz (JS tölti fel) ===== */
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #e8f9f0;
+  border: 2px solid #4cc38a;
+  display: none;
+}
+
+/* ===== Mobilos nézet az űrlaphoz ===== */
+@media (max-width: 600px) {
+  #adoption-form input[type="text"],
+  #adoption-form textarea,
+  #adoption-form input[type="date"] {
+    max-width: 100%;
+  }
+
+  #adoption-form button {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
