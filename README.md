@@ -16,8 +16,6 @@ Kawaii stílusú ponifarm weboldal, webfejlesztés beadandó (HTML, CSS, JavaScr
 - `css/`: `style.css` (általános), `form.css` (űrlap)
 - `js/`: `effects.js` (animációk, új elem), `ponies.js` (szűrés), `validation.js` (űrlap ellenőrzés)
 - `img/`: saját készítésű SVG poni illusztrációk
-- `docs/`: a dokumentáció fejezetei (Markdown) és a képernyőképek
-- `bemutato/`: bemutató forgatókönyv és lehetséges kérdések
 - `dokumentacio.docx`: a teljes dokumentáció Word formátumban
 
 ## Futtatás
