@@ -88,6 +88,14 @@ button:active {
   background-color: #fff0f3 !important;
 }
 
+/* Rádiógombok és jelölőnégyzet hibája: az egész sor piros keretet kap */
+.group-invalid {
+  border: 2px solid #e0245e;
+  border-radius: 12px;
+  background-color: #fff0f3;
+  padding: 8px 12px;
+}
+
 .valid {
   border-color: #4cc38a !important;
 }
