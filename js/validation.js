@@ -17,6 +17,7 @@ $(document).ready(function () {
     $(".error").text("");
     $("#adoption-form .invalid").removeClass("invalid");
     $("#adoption-form .valid").removeClass("valid");
+    $("#adoption-form .group-invalid").removeClass("group-invalid");
   }
 
   // Gépelés közben eltűnik a hiba az adott mezőnél
@@ -24,10 +25,10 @@ $(document).ready(function () {
     clearError($(this).attr("id"));
   });
   $("input[name='pony']").on("change", function () {
-    $("#pony-error").text("");
+    $("#pony-error").text("").closest(".field").removeClass("group-invalid");
   });
   $("#accept").on("change", function () {
-    $("#accept-error").text("");
+    $("#accept-error").text("").closest(".field").removeClass("group-invalid");
   });
 
   // Űrlap elküldése
@@ -58,6 +59,7 @@ $(document).ready(function () {
     // Poni választás (radio)
     if ($("input[name='pony']:checked").length === 0) {
       $("#pony-error").text("Válassz egy ponit!");
+      $("#pony-error").closest(".field").addClass("group-invalid");
       isValid = false;
     }
 
@@ -77,6 +79,7 @@ $(document).ready(function () {
     // Elfogadás (checkbox)
     if (!$("#accept").is(":checked")) {
       $("#accept-error").text("Ezt el kell fogadnod!");
+      $("#accept-error").closest(".field").addClass("group-invalid");
       isValid = false;
     }
 
